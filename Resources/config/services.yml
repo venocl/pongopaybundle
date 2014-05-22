@@ -1,0 +1,10 @@
+
+parameters:
+    pongo_pay.merchant_id: testconf
+    pongo_pay.payment_type: ManualPayment
+
+services:
+    pongo_pay_payment: 
+        class: Pongo\PayBundle\Services\PaymentService
+        arguments: ["%pongo_pay.merchant_id%","%pongo_pay.payment_type%"]
+
