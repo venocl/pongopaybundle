@@ -15,7 +15,6 @@ class PaymentService
 
   protected $mandatory_parameters = array(
     'amount',
-    'gatewayType',
     'cardNumber',
     'cardCvv',
     'cardExpiryMonth',
@@ -23,6 +22,7 @@ class PaymentService
     'currency',
   );
   protected $optional_parameters = array(
+    'gatewayType',
     'merchantReference',
     'source',
     );
